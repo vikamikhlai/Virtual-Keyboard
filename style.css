@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.body__textarea {
+    width: 839px;
+    height: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper {
+    margin-top: 5px;
+}
+
+.keyboard__wrapper {
+    width: 839px;
+    background-color: rgb(144, 0, 255);
+}
+
+.keyboard__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -4px;
+}
+
+.key {
+    margin: 0;
+    border: 2px solid ;
+    border-radius: 5px;
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(243, 16, 163);
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+}
+
+.key:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: rgb(186, 245, 23);
+}
+/*
+@keyframes closeKey {
+    from {
+        background-color: rgb(110, 255, 13); 
+        border-radius: 20px;
+    }
+
+    to {
+        background-color: rgb(243, 16, 163);
+    }
+}
+*/
+
+.click {
+    border-radius: 20px;
+    background-color: rgb(110, 255, 13);
+}
+
+.backspace {
+    width: 120px;
+}
+
+.tab, .enter  {
+    width: 75px;
+}
+
+.capslock, .shift {
+    width: 109px;
+}
+
+.space  {
+    width: 399px;
+} 
+
+.key:last-child {
+    margin-right: 0;
+}
+
+.caseDown {
+    display: none;
+}
+
+.caseUp {
+    display: none;
+}
+
+.caps {
+    display: none;
+}
+
+.shiftcaps {
+    display: none;
+}
+.en, .ru {
+    display: none;
+}
+
+.active {
+    display: block;
+}
