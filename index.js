@@ -96,7 +96,7 @@ function clickOnButton (event) {
                 changeCase(false)
                 break;
             case "shift":
-                changeCase(true)
+                changeCase(true);
                 break;
             case "ctrl":
 
@@ -105,18 +105,6 @@ function clickOnButton (event) {
 
                 break;
             case "del":
-
-                break;
-            case "up":
-
-                break;
-            case "down":
-
-                break;
-            case "left":
-
-                break;
-            case "right":
 
                 break;
             case "alt":
