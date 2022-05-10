@@ -835,7 +835,7 @@
             "shiftcaps": "▲"
         },
         "keycode": "ArrowUp",
-        "type": "control",
+        "type": "abc",
         "name": "up"
     },
     {
@@ -954,7 +954,7 @@
             "shiftcaps": "◄"
         },
         "keycode": "ArrowLeft",
-        "type": "control",
+        "type": "abc",
         "name": "left"
     },
     {
@@ -971,10 +971,9 @@
             "shiftcaps": "▼"
         },
         "keycode": "ArrowDown",
-        "type": "control",
+        "type": "abc",
         "name": "down"
     },
-
     {
         "en": {
             "caseDown": "►",
@@ -989,7 +988,7 @@
             "shiftcaps": "►"
         },
         "keycode": "ArrowRight",
-        "type": "control",
+        "type": "abc",
         "name": "right"
     },
     {
