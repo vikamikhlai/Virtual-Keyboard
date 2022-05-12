@@ -84,7 +84,6 @@ function changeCase(isShift) {
 function handleInput(keyElement) {
     if (keyElement) {
         keyElement.classList.add('click');
-        console.log('handleInput')
         switch (keyElement.dataset.action) {
             case "enter":
                 textarea.value += '\r\n';
@@ -94,15 +93,12 @@ function handleInput(keyElement) {
                 changeCase(false)
                 break;
             case "backspace":
-                console.log(onBlur)
                 if (!onBlur) break;
                 if (focusPosition) {
-                    console.log('if', focusPosition)
                     textarea.value = textarea.value.slice(0, focusPosition - 1) + textarea.value.slice(focusPosition);
                     focusPosition -= 1;
                 } else {
                     textarea.value = textarea.value.slice(0, -1);
-                    console.log('else', focusPosition)
                 }
                 break;
             case "del":
@@ -116,10 +112,6 @@ function handleInput(keyElement) {
         if (keyElement.dataset.inputable) {
             textarea.value += keyElement.querySelector('.active .active').innerHTML;
         }
-        // if (buttonClick) {
-        //     buttonClick.classList.remove('click');
-        // }
-        // buttonClick = keyElement;
     }
 }
 
@@ -146,20 +138,16 @@ function handleMouseUp(event) {
 }
 
 function handleCaretPosition(event) {
-    console.log(event.target.selectionStart);
     focusPosition = event.target.selectionStart;
     onBlur = false;
 }
 
 function handleKeyboard(event) {
-    // Найти нажатую клавишу на виртуальной клавиатуре
     const keycodeButton = document.querySelector(`[keycode=${event.code}]`);
-    // Производить ввод символа нажатой клавиши в соответствии с текущим статусом Caps/Shift
     handleInput(keycodeButton)
     if (event.type === 'keyup') {
         keycodeButton.classList.remove('click');
     }
-    // if (keycodeButton) textarea.value += keycodeButton.querySelector('.active .active').innerHTML; 
 }
 
 
@@ -167,7 +155,6 @@ let focusPosition;
 let onBlur = false;
 textarea.addEventListener('focus', handleCaretPosition);
 textarea.addEventListener('blur', () => onBlur = true);
-// textarea.addEventListener('keyup', handleCaretPosition);
 textarea.addEventListener('mouseup', handleCaretPosition);
 
 buttons.addEventListener('click', clickOnButton);
