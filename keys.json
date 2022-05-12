@@ -12,6 +12,7 @@
             "caps": "Ё",
             "shiftcaps": "ё"
         },
+        "keycode": "Backquote", 
         "type": "abc"
     },
     {
@@ -27,6 +28,7 @@
             "caps": "1",
             "shiftcaps": "!"
         },
+        "keycode": "Digit1",
         "type": "abc"
     },
     {
@@ -42,6 +44,7 @@
             "caps": "2",
             "shiftcaps": "\""
         },
+        "keycode": "Digit2",
         "type": "abc"
     },
     {
@@ -57,6 +60,7 @@
             "caps": "3",
             "shiftcaps": "№"
         },
+        "keycode": "Digit3",
         "type": "abc"
     },
     {
@@ -72,6 +76,7 @@
             "caps": "4",
             "shiftcaps": ";"
         },
+        "keycode": "Digit4",
         "type": "abc"
     },
     {
@@ -87,6 +92,7 @@
             "caps": "5",
             "shiftcaps": "%"
         },
+        "keycode": "Digit5",
         "type": "abc"
     },
     {
@@ -102,6 +108,7 @@
             "caps": "6",
             "shiftcaps": ":"
         },
+        "keycode": "Digit6",
         "type": "abc"
     },
     {
@@ -117,6 +124,7 @@
             "caps": "7",
             "shiftcaps": "?"
         },
+        "keycode": "Digit7",
         "type": "abc"
     },
     {
@@ -132,6 +140,7 @@
             "caps": "8",
             "shiftcaps": "*"
         },
+        "keycode": "Digit8",
         "type": "abc"
     },
     {
@@ -147,6 +156,7 @@
             "caps": "9",
             "shiftcaps": "("
         },
+        "keycode": "Digit9",
         "type": "abc"
     },
     {
@@ -162,6 +172,7 @@
             "caps": "0",
             "shiftcaps": ")"
         },
+        "keycode": "Digit0",
         "type": "abc"
     },
     {
@@ -177,6 +188,7 @@
             "caps": "-",
             "shiftcaps": "_"
         },
+        "keycode": "Minus",
         "type": "abc"
     },
     {
@@ -192,6 +204,7 @@
             "caps": "Backspace",
             "shiftcaps": "Backspace"
         },
+        "keycode": "Backspace",
         "type": "control",
         "name": "backspace"
     },
@@ -208,6 +221,7 @@
             "caps": "Tab",
             "shiftcaps": "Tab"
         },
+        "keycode": "Tab",
         "type": "control",
         "name": "tab"
     },
@@ -224,6 +238,7 @@
             "caps": "Й",
             "shiftcaps": "й"
         },
+        "keycode": "KeyQ",
         "type": "abc"
     },
     {
@@ -239,6 +254,7 @@
             "caps": "Ц",
             "shiftcaps": "ц"
         },
+        "keycode": "KeyW",
         "type": "abc"
     },
     {
@@ -254,6 +270,7 @@
             "caps": "У",
             "shiftcaps": "у"
         },
+        "keycode": "KeyE",
         "type": "abc"
     },
     {
@@ -269,6 +286,7 @@
             "caps": "К",
             "shiftcaps": "к"
         },
+        "keycode": "KeyR",
         "type": "abc"
     },
     {
@@ -284,6 +302,7 @@
             "caps": "Е",
             "shiftcaps": "е"
         },
+        "keycode": "KeyT",
         "type": "abc"
     },
     {
@@ -299,6 +318,7 @@
             "caps": "Н",
             "shiftcaps": "н"
         },
+        "keycode": "KeyY",
         "type": "abc"
     },
     {
@@ -314,6 +334,7 @@
             "caps": "Г",
             "shiftcaps": "г"
         },
+        "keycode": "KeyU",
         "type": "abc"
     },
     {
@@ -329,6 +350,7 @@
             "caps": "Щ",
             "shiftcaps": "щ"
         },
+        "keycode": "KeyO",
         "type": "abc"
     },
     {
@@ -344,6 +366,7 @@
             "caps": "З",
             "shiftcaps": "з"
         },
+        "keycode": "KeyP",
         "type": "abc"
     },
     {
@@ -359,6 +382,7 @@
             "caps": "Х",
             "shiftcaps": "х"
         },
+        "keycode": "BracketLeft",
         "type": "abc"
     },
     {
@@ -374,6 +398,7 @@
             "caps": "Ъ",
             "shiftcaps": "ъ"
         },
+        "keycode": "BracketRight",
         "type": "abc"
     },
     {
@@ -389,6 +414,7 @@
             "caps": "\\",
             "shiftcaps": "/"
         },
+        "keycode": "Backslash",
         "type": "abc"
     },
     {
@@ -404,6 +430,7 @@
             "caps": "Del",
             "shiftcaps": "Del" 
         },
+        "keycode": "Delete",
         "type": "control",
         "name": "del"
     },
@@ -420,6 +447,7 @@
             "caps": "CapsLock",
             "shiftcaps": "CapsLock"
         },
+        "keycode": "CapsLock",
         "type": "control",
         "name": "capslock"
     },
@@ -436,6 +464,7 @@
             "caps": "Ф",
             "shiftcaps": "ф"
         },
+        "keycode": "KeyA",
         "type": "abc"
     },
     {
@@ -451,6 +480,7 @@
             "caps": "Ы",
             "shiftcaps": "ы"
         },
+        "keycode": "KeyS",
         "type": "abc"
     },
     {
@@ -466,6 +496,7 @@
             "caps": "В",
             "shiftcaps": "в"
         },
+        "keycode": "KeyD",
         "type": "abc"
     },
     {
@@ -481,6 +512,7 @@
             "caps": "А",
             "shiftcaps": "а"
         },
+        "keycode": "KeyF",
         "type": "abc"
     },
     {
@@ -496,6 +528,7 @@
             "caps": "П",
             "shiftcaps": "п"
         },
+        "keycode": "KeyG",
         "type": "abc"
     },
     {
@@ -511,6 +544,7 @@
             "caps": "Р",
             "shiftcaps": "р"
         },
+        "keycode": "KeyH",
         "type": "abc"
     },
     {
@@ -526,6 +560,7 @@
             "caps": "О",
             "shiftcaps": "о"
         },
+        "keycode": "KeyJ",
         "type": "abc"
     },
     {
@@ -541,6 +576,7 @@
             "caps": "Л",
             "shiftcaps": "л"
         },
+        "keycode": "KeyK",
         "type": "abc"
     },    
     {
@@ -556,6 +592,7 @@
             "caps": "Д",
             "shiftcaps": "д"
         },
+        "keycode": "KeyL",
         "type": "abc"
     },
     {
@@ -571,6 +608,7 @@
             "caps": "Ж",
             "shiftcaps": "ж"
         },
+        "keycode": "Semicolon",
         "type": "abc"
     },    
     {
@@ -586,6 +624,7 @@
             "caps": "Э",
             "shiftcaps": "э"
         },
+        "keycode": "Quote",
         "type": "abc"
     },    
     {
@@ -601,6 +640,7 @@
             "caps": "Enter",
             "shiftcaps": "Enter"
         },
+        "keycode": "Enter",
         "type": "control",
         "name": "enter"
     },    
@@ -617,6 +657,7 @@
             "caps": "Shift",
             "shiftcaps": "Shift"
         },
+        "keycode": "ShiftLeft",
         "type": "control",
         "name": "shift"
     },    
@@ -633,6 +674,7 @@
             "caps": "Я",
             "shiftcaps": "я"
         },
+        "keycode": "KeyZ",
         "type": "abc"
     },    
     {
@@ -648,6 +690,7 @@
             "caps": "Ч",
             "shiftcaps": "ч"
         },
+        "keycode": "KeyX",
         "type": "abc"
     },    
     {
@@ -663,6 +706,7 @@
             "caps": "С",
             "shiftcaps": "с"
         },
+        "keycode": "KeyC",
         "type": "abc"
     },    
     {
@@ -678,6 +722,7 @@
             "caps": "М",
             "shiftcaps": "м"
         },
+        "keycode": "KeyV",
         "type": "abc"
     },    
     {
@@ -693,6 +738,7 @@
             "caps": "И",
             "shiftcaps": "и"
         },
+        "keycode": "KeyB",
         "type": "abc"
     },    
     {
@@ -708,6 +754,7 @@
             "caps": "Т",
             "shiftcaps": "т"
         },
+        "keycode": "KeyN",
         "type": "abc"
     },    
     {
@@ -723,6 +770,7 @@
             "caps": "Ь",
             "shiftcaps": "ь"
         },
+        "keycode": "KeyM",
         "type": "abc"
     },    
     {
@@ -738,6 +786,7 @@
             "caps": "Б",
             "shiftcaps": "б"
         },
+        "keycode": "Comma",
         "type": "abc"
     },
     {
@@ -753,6 +802,7 @@
             "caps": "Ю",
             "shiftcaps": "ю"
         },
+        "keycode": "Period",
         "type": "abc"
     },
     {
@@ -768,6 +818,7 @@
             "caps": ".",
             "shiftcaps": ","
         },
+        "keycode": "Slash",
         "type": "abc"
     },
     {
@@ -783,7 +834,8 @@
             "caps": "▲",
             "shiftcaps": "▲"
         },
-        "type": "control",
+        "keycode": "ArrowUp",
+        "type": "abc",
         "name": "up"
     },
     {
@@ -799,6 +851,7 @@
             "caps": "Shift",
             "shiftcaps": "Shift"
         },
+        "keycode": "ShiftRight",
         "type": "control",
         "name": "shift"
     },
@@ -815,6 +868,7 @@
             "caps": "Ctrl",
             "shiftcaps": "Ctrl"
         },
+        "keycode": "ControlLeft",
         "type": "control",
         "name": "ctrl"
     },
@@ -832,6 +886,7 @@
             "caps": "Win",
             "shiftcaps": "Win"
         },
+        "keycode": "MetaLeft",
         "type": "control",
         "name": "win"
     },    {
@@ -847,6 +902,7 @@
             "caps": "Alt",
             "shiftcaps": "Alt"
         },
+        "keycode": "AltLeft",
         "type": "control",
         "name": "alt"
     },
@@ -863,6 +919,7 @@
             "caps": " ",
             "shiftcaps": " "
         },
+        "keycode": "Space",
         "type": "control",
         "name": "space"
     },
@@ -879,6 +936,7 @@
             "caps": "Alt",
             "shiftcaps": "Alt"
         },
+        "keycode": "AltRight",
         "type": "control",
         "name": "alt"
     },
@@ -895,7 +953,8 @@
             "caps": "◄",
             "shiftcaps": "◄"
         },
-        "type": "control",
+        "keycode": "ArrowLeft",
+        "type": "abc",
         "name": "left"
     },
     {
@@ -911,10 +970,10 @@
             "caps": "▼",
             "shiftcaps": "▼"
         },
-        "type": "control",
+        "keycode": "ArrowDown",
+        "type": "abc",
         "name": "down"
     },
-
     {
         "en": {
             "caseDown": "►",
@@ -928,7 +987,8 @@
             "caps": "►",
             "shiftcaps": "►"
         },
-        "type": "control",
+        "keycode": "ArrowRight",
+        "type": "abc",
         "name": "right"
     },
     {
@@ -944,6 +1004,7 @@
             "caps": "Ctrl",
             "shiftcaps": "Ctrl"
         },
+        "keycode": "ControlRight",
         "type": "control",
         "name": "ctrl"
     }
