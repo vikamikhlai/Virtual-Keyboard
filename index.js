@@ -51,6 +51,7 @@ function createKey(data) {
         if (data.name === 'space') {
             key.dataset.inputable = true;
         }
+        key.dataset.action = data.name;
     } else {
         key.className = "key";
         key.dataset.inputable = true;
@@ -72,21 +73,18 @@ let buttonClick;
 
 function changeCase(isShift) {
     document.querySelectorAll('.key').forEach(el => {
-        el.querySelector('.active .active').classList.toggle('active');
-        isCaps 
-            ? isShift
-                ? el.querySelector('.shiftcaps').classList.add('active')
-                : el.querySelector('.caseDown').classList.add('active')
-            : isShift
-                ? el.querySelector('.caseUp').classList.add('active')
-                : el.querySelector('.caseDown').classList.add('active')
+        el.querySelector('.active .active').classList.remove('active');
+        if (isCaps && isShift) el.querySelector('.active .shiftcaps').classList.add('active')
+        if (isCaps && !isShift) el.querySelector('.active .caps').classList.add('active')
+        if (!isCaps && isShift) el.querySelector('.active .caseUp').classList.add('active')
+        if (!isCaps && !isShift) el.querySelector('.active .caseDown').classList.add('active');
     })
 }
 
-function clickOnButton (event) {
-    const keyElement = event.target.closest('.key');
+function handleInput(keyElement) {
     if (keyElement) {
         keyElement.classList.add('click');
+        console.log('handleInput')
         switch (keyElement.dataset.action) {
             case "enter":
                 textarea.value += '\r\n';
@@ -95,20 +93,20 @@ function clickOnButton (event) {
                 isCaps = !isCaps;
                 changeCase(false)
                 break;
-            case "shift":
-                changeCase(true);
-                break;
-            case "ctrl":
-
-                break;
             case "backspace":
-
+                console.log(onBlur)
+                if (!onBlur) break;
+                if (focusPosition) {
+                    console.log('if', focusPosition)
+                    textarea.value = textarea.value.slice(0, focusPosition - 1) + textarea.value.slice(focusPosition);
+                    focusPosition -= 1;
+                } else {
+                    textarea.value = textarea.value.slice(0, -1);
+                    console.log('else', focusPosition)
+                }
                 break;
             case "del":
-
-                break;
-            case "alt":
-
+                textarea.value = textarea.value.slice(0, focusPosition) + textarea.value.slice(focusPosition + 1);
                 break;
             case "tab":
                 textarea.value += '\t';
@@ -118,14 +116,63 @@ function clickOnButton (event) {
         if (keyElement.dataset.inputable) {
             textarea.value += keyElement.querySelector('.active .active').innerHTML;
         }
-        if (buttonClick) {
-            buttonClick.classList.remove('click');
-        }
-        buttonClick = keyElement;
+        // if (buttonClick) {
+        //     buttonClick.classList.remove('click');
+        // }
+        // buttonClick = keyElement;
     }
 }
 
+function clickOnButton (event) {
+    const keyElement = event.target.closest('.key');
+    handleInput(keyElement);
+    if (event.type === 'click') {
+        keyElement && keyElement.classList.remove('click');
+    }
+}
+
+function handleMouseDown(event) {
+    const keyElement = event.target.closest('.key');
+    if (keyElement && keyElement.dataset.action === 'shift') {
+        changeCase(true);
+    }
+}
+
+function handleMouseUp(event) {
+    const keyElement = event.target.closest('.key');
+    if (keyElement && keyElement.dataset.action === 'shift') {
+        changeCase(false);
+    }
+}
+
+function handleCaretPosition(event) {
+    console.log(event.target.selectionStart);
+    focusPosition = event.target.selectionStart;
+    onBlur = false;
+}
+
+function handleKeyboard(event) {
+    // Найти нажатую клавишу на виртуальной клавиатуре
+    const keycodeButton = document.querySelector(`[keycode=${event.code}]`);
+    // Производить ввод символа нажатой клавиши в соответствии с текущим статусом Caps/Shift
+    handleInput(keycodeButton)
+    if (event.type === 'keyup') {
+        keycodeButton.classList.remove('click');
+    }
+    // if (keycodeButton) textarea.value += keycodeButton.querySelector('.active .active').innerHTML; 
+}
+
+
+let focusPosition; 
+let onBlur = false;
+textarea.addEventListener('focus', handleCaretPosition);
+textarea.addEventListener('blur', () => onBlur = true);
+// textarea.addEventListener('keyup', handleCaretPosition);
+textarea.addEventListener('mouseup', handleCaretPosition);
+
 buttons.addEventListener('click', clickOnButton);
-addEventListener('keydown', event => {
-    console.log(event)
-});
+buttons.addEventListener('mousedown', handleMouseDown);
+buttons.addEventListener('mouseup', handleMouseUp);
+
+addEventListener('keydown', handleKeyboard);
+addEventListener('keyup', handleKeyboard);
